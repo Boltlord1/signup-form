@@ -1,0 +1,148 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+@font-face {
+    font-family: "norse";
+    src: url("./assets/Norse-Bold.otf") format("otf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+main {
+    display: flex;
+    height: 1030px;
+    width: 100vw;
+}
+.background {
+    padding-top: 20%;
+    --width: min(687px, 45vw);
+    background: no-repeat url(./assets/background.png);
+    width: var(--width);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.content {
+    width: 55vw;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+    font-family: "norse";
+    display: flex;
+    flex-direction: row;
+    height: 150px;
+    background-color: rgb(0, 0, 0, 0.5);
+    color: white;
+    font-size: 75px;
+    align-items: center;
+    justify-content: center;
+}
+#image {
+    width: 75px;
+    height: auto;
+}
+.credit {
+    position: absolute;
+    color: white;
+    bottom: 0;
+    right: 0;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+form {
+    height: 100%;
+}
+.top {
+    height: 35%;
+    background: rgb(240, 240, 240);
+    padding: 0 10% 0 5%;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.form {
+    height: 30%;
+    background: white;
+    padding: 0 0 0 5%;
+}
+.bottom {
+    height: 35%;
+    background: rgb(240, 240, 240);
+}
+
+#long {
+    padding-top: 20%;
+}
+#short {
+    padding-top: 10px;
+}
+#shorter {
+    padding-top: 50px;
+}
+em {
+    font-style: italic;
+}
+
+.form > p {
+    font-size: 1.5rem;
+    padding: 20px 0 10px;
+}
+.form > * {
+    padding-top: 20px;
+}
+.two {
+    display: flex;
+}
+.one {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.names, .info, .passwords {
+    appearance: none;
+    width: 80%;
+    height: 25px;
+    border: 2px solid rgb(199, 199, 199);
+    border-radius: 5px;
+    font-size: 100%;
+}
+label {
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+    color: rgb(49, 49, 49);
+}
+
+.bottom > * {
+    padding: 20px 0 0 5%;
+}
+#button {
+    padding: 10px 30px;
+    color: white;
+    background-color: rgb(33, 121, 33);
+    border: none;
+    border-radius: 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+footer {
+    background-color: black;
+}
